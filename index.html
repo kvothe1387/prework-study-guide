@@ -11,6 +11,7 @@
     <header id="header">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="Computational Thinking">
@@ -132,7 +133,123 @@
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>A variable is a named container that allows us to store data in our code.</li>
+          <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li>API- Browser app programming interfaces provide functionality</li>
+          <li>JavaScript is case sensitive</li>
+          <li>Each line of .js code ends with a ;</li>
+          <br />
+          <li>String- To signify that the value is a sring, enclose it in ''or""</li>
+          <li>Boolean- A true/false value, true & false don't need quote marks</li>
+          <li>Array- A structure that allows you to store mulitple values in a single reference</li>
+          <li>Object- Can be anything</li>
+          <br />
+          <li>Operators- A mathematical symbol that produces a result based on two values</li>
+          <li>+ -Add two numbers or combine two strings together</li>
+          <li>= -Assignment</li>
+          <li>=== - Strict equallity - Performs a test to see if two values are equal & of the same data type - Returns a boolean result</li>
+          <li>! and !== -Not/does not equal</li>
+          <br />
+          <li>Conditionals - Code structures used to test if an expression returns true or not "if...else"</li>
+          <li>The expression inside the if() is the test</li>
+          <li>If comparison returns true, the 1st block of code runs</li>
+          <li>If comparison is n ot true, the 2nd block of code after the else statement runs instead</li>
+          <br />
+          <li>Functions- A way of packaging functionality that you wish to reuse</li>
+          <li>Possible to define a body of code as a function that executes when you call the function name in your code</li>
+          <li>Often take arguments: bits of data they need to do their job</li>
+          <li>Arguments go inside the () separated by commas if there is more than one argument</li>
+          <br />
+          <li>Events- Code structures that listen for activity in the browser and run code in response</li>
+          <br />
+          <li>JavaScript is a dynamic language with dynamic types</li>
+          <li>Variables are not directly associated with any particular value type</li>
+          <li>Any variable can be assigned and reassigned </li>
+          <li>Weakly typed lang- Allows implicit type conversion when operation involves mismatched types instead of throwing errors</li>
+          <br />
+          <li>Primitive Values- All types except 'object' define immutable values represented directly at the lowest level of the lang</li>
+          <li>All primitive types except "null" can be tested by the "typeof" operator</li>
+          <li>"typeof null" returns "object" so one has to use "===null" to test for "null"</li>
+          <li>When a property is accesed on a primititve value, .js auto wraps the value into the corresponding wrapper object & acceses the property on the object instead</li>
+          <br />
+          <li>Operational chaining(?)- Acceses an object property or calls a function</li>
+          <li>If the object accessed or function called using this operator is "undefined or null", the expression short circuits & evaluates to "undefined" instead of throwing an error</li>
+          <li>"undefined"- Indicates the absence of a value</li>
+          <li>"null"- Indicates the absence of an object</li>
+          <li>The language usually defaults to "undefined" when something is devoid of value</li>
+          <li>"null" is a keyword, but "undefined" is a normal identifier that happens to be a global property</li>
+          <br />
+          <li>Number type- A double precision 64bit binary format IEEE 754 value</li>
+          <li>Capable of storing positive floating point numbers</li>
+          <li>"NaN"- Not a number</li>
+          <br />
+          <li>BigInt type- A numeric primitiive in .js that can represent integers with arbitrary magnitude</li>
+          <li>Can safely store & operate on large integers beyond the safe integer limit for numbers</li>
+          <li>Created by appending "n" to the end of an integer or by calling the "BigInt()" function</li>
+          <li>Cannot represent fractional numbers</li>
+          <br />
+          <li>String type- Represents textual data and is encoded as a sequence of 16bit unsigned integer values representing UTF-16 code units</li>
+          <li>Each element in the string occupies a position in the string</li>
+          <li>The lenght of a string is the number of UTF-16 code units in it</li>
+          <li>.JS strings are immutable- Once a string is created it is not possible to modify it</li>
+          <li>String methods create new strings based on the content of the current string</li>
+          <br />
+          <li>Symbol type- A unique & immutable primitive value & may be used as the key of an object property</li>
+          <li>The purpose of symbols is to create unique property keys that are guaranteed not to clash with keys from other code</li>
+          <br />
+          <li>Objects- A value in memory which is possibly referenced by an identifier</li>
+          <li>In .js objects are the only mutable values</li>
+          <li>Functions are also objects with the additional capability of being callable</li>
+          <br />
+          <li>Properties- in .js objects can be seen as a collection of properties</li>
+          <li>Object properties are equivalent to key value pairs</li>
+          <li>Property keys are either strings or symbols</li>
+          <li>Property values can be values of any type including other objects</li>
+          <li>Two types of object properties- data property & accessor property</li>
+          <br />
+          <li>Data property- Associate a key with a value</li>
+          <li>"value"- The value retrieved by a get access of the property, can be any .js value</li>
+          <li>"writable"- A boolean value indicating if the property can be changed with an assignment</li>
+          <li>"enumerable"- A boolean value indicating if the property can be enumerated by a "for...in" loop</li>
+          <li>"configurable"- A boolean value indicating if the property can be deleted, can be changed to an accessor property & can have its attributes changed</li>
+          <br />
+          <li>Accessor property- Associates a key with one of two accessor functions "get" & "set" to retrieve or store a value</li>
+          <li>"get"- A function called with an empty argument list to retrieve the property value whenever a "get" access to the value is performed</li>
+          <li>"set"- A function called with an argument that contains the assigned value. Executed whenever a specified property is attempted to be changed</li>
+          <li>"enumerable"- A boolean value indicating if the property can be enumerated by a "for...in" loop</li>
+          <li>"configurable"- A boolean value indicating if the property can be deleted, can be changed to a data property, & can have its attributes changed</li>
+          <br />
+          <li>Arrays- Regular objects for which there is a particular relationship between integer keyed property & the length property</li>
+          <li>Typed arrays- Present an array like view of an underlying binary data buffer, umbrella term for a range of data structures</li>
+          <li>Often used in conjunction with "ArrayBuffer" & "DataView"</li>
+          <br />
+          <li>Keyed collections- Take object references as keys</li>
+          <li>"Set" & "WeakSet"- Represent a collection of unique values</li>
+          <li>"Map" & "WeakMap"- Represent a collection of key value associations</li>
+          <li>"WeakMap/Set"- Only allow garbage collectable values as keys, which are either objects or non-registered symbols</li>
+          <li>Keys may be collected even when they remain in the collection</li>
+          <br />
+          <li>JSON- .js object notation</li>
+          <li>Builds universal data structures that can be transferred between different environments & even across languages</li>
+          <br />
+          <li>Type coercion- Often use a value of one type where another type is expected, & the language will convert it to the right type</li>
+          <li>Primitive coercion- Used where a primitive value is expected, but theres no strong preference for what the actual type should be. Usually when a string, number, or BigInt are equally acceptable</li>
+          <li>Primitve conversion calls "valueof() before "tostring()</li>
+          <li>"const"- Allows us to create variable that can't be reassigned a value</li>
+          <li>Use an assignment operator (=) to assign the specific data we want stored in our variable</li>
+          <br />
+          <li>A "for" loop uses the predictable pattern of indices to perform a task on all items in an array by allowing a single code block to be executed over & over</li>
+          <li>1st statement determines the starting point for our loop</li>
+          <li>2nd statement is the condition</li>
+          <li>Final statement is what allows the array to iterate over each item</li>
+          <li>The code "x++" is a shortcut of writing "x+1"</li>
+          <br />
+          <li>Function- A set of instructions that tells the computer how to perfom a task</li>
+          <li>Does not auto execute when the .js file is run</li>
+          <li>Must call a function by name in order to execute it</li>
+          <li>A function name is followed by ()</li>
+          <li>The code to be executed is written inside {}</li>
+
         </ul>
 
       </section>
@@ -142,5 +259,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
